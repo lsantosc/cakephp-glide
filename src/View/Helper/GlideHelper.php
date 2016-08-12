@@ -13,7 +13,7 @@ class GlideHelper extends Helper
      *
      * @var array
      */
-    public $helpers = ['Html'];
+    public $helpers = ['Html', 'Url'];
 
     /**
      * URL builder.
@@ -35,7 +35,8 @@ class GlideHelper extends Helper
      */
     public function image($path, array $params = [], array $options = [])
     {
-        return $this->Html->image($this->url($path, $params + ['_base' => false]), $options);
+        $url = $this->Url->build($this->url($path, $params + ['_base' => false]), true);
+        return $this->Html->image($url, $options);
     }
 
     /**
