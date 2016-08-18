@@ -29,7 +29,8 @@
     },
     "require": {
         "cakephp/cakephp": "~3.0",
-        "league/glide": "~1.0"
+        "league/glide": "~1.0",
+        "league/glide-cake": "^1.0"
     },
     "autoload": {
         "psr-4": {
