@@ -1,7 +1,7 @@
 <?php
 namespace ADmad\Glide\Routing\Filter;
 
-use ADmad\Glide\Responses\CakeResponseFactory;
+use League\Glide\Responses\CakeResponseFactory;
 use Cake\Core\Configure;
 use Cake\Event\Event;
 use Cake\Routing\DispatcherFilter;
